@@ -465,6 +465,8 @@ footer{padding:60px 48px 40px;text-align:center;border-top:2px solid rgba(212,16
 @media(min-width:1200px){.section-inner{max-width:1300px}.hero-title{font-size:72px}.hero-sub{font-size:19px}.hero-logo img{height:160px}.about-title{font-size:60px}.about-text{font-size:16px;max-width:560px}.stat-number{font-size:48px}.services-grid{grid-template-columns:repeat(3,1fr);gap:28px}.team-grid{grid-template-columns:repeat(2,1fr);gap:28px}.reviews-grid{gap:24px}.footer-logo img{height:100px}.service-card-img{height:240px}.hero-contact-item{font-size:14px}}
 @media(max-width:1024px){.about-grid,.hours-cta-grid,.map-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr 1fr}.reviews-grid{grid-template-columns:1fr 1fr}.map-embed{min-height:300px}}
 @media(max-width:768px){.section{padding:80px 24px}nav{padding:16px 24px}nav.scrolled{padding:12px 24px}.nav-links{display:none}.hamburger{display:flex}.mobile-menu{display:flex}.services-grid,.team-grid,.reviews-grid{grid-template-columns:1fr}.review-cta{flex-direction:column}.cta-apps{flex-direction:column;align-items:center}footer{padding:40px 20px 32px}.footer-links{gap:16px}.hero-logo img{height:80px}.photo-strip img{height:160px}.hero{min-height:100svh}.hero-title{letter-spacing:-1px}.hero-contact-item{font-size:11px}.hero-sub{font-size:14px}.about-stats{gap:16px}.stat-item{padding:20px}.stat-number{font-size:32px}.hero-actions{gap:12px}.btn-primary{padding:16px 32px;font-size:13px}.btn-secondary{padding:14px 28px;font-size:12px}.about-title{margin-bottom:20px}.splash-info{font-size:10px}.marquee-item{font-size:16px}}
+.mobile-book{display:none}
+@media(max-width:768px){.mobile-book{display:flex;position:fixed;left:16px;right:16px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:900;align-items:center;justify-content:center;gap:8px;padding:16px;border-radius:14px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0d0e24;font-family:'JetBrains Mono',monospace;font-weight:700;font-size:14px;letter-spacing:2px;text-transform:uppercase;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.45);transform:translateY(140%);opacity:0;transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .45s}.mobile-book.show{transform:none;opacity:1}footer{padding-bottom:110px!important}}
 </style>
 </head>
 <body>
@@ -513,8 +515,7 @@ footer{padding:60px 48px 40px;text-align:center;border-top:2px solid rgba(212,16
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-logo"><img loading="lazy" src="https://img1.wsimg.com/isteam/ip/c6a06a86-f6b2-455f-8252-2116415e3a65/Babylon-Barbers-Website-Logo.png/:/rs=h:200,cg:true,m/qt=q:95" alt="Babylon Barbers"></div>
-    <p class="hero-tag">Cherry Hill, New Jersey</p>
-    <h1 class="hero-title">Where Craft<br>Meets <em>Culture</em></h1>
+    <h1 class="hero-title"><span class="hero-tag" style="display:block;line-height:1.4">Cherry Hill Barbershop</span>Where Craft<br>Meets <em>Culture</em></h1>
     <p class="hero-sub">Premium fades, precision grooming, and an atmosphere built for kings. Walk in a client — leave as family.</p>
     <div class="hero-actions"><a href="https://babylonbookings.com/app" class="btn-primary">Book Your Cut →</a><a href="#services" class="btn-secondary">View Services</a></div>
     <div class="hero-contact">
@@ -1045,5 +1046,7 @@ if(closeBtn){closeBtn.addEventListener('click',()=>{document.getElementById('ham
   phoneObs.observe(phone);
 })();
 </script>
+<a href="https://babylonbookings.com/app" target="_blank" rel="noopener noreferrer" class="mobile-book" id="mobileBook">Book Your Cut &rarr;</a>
+<script>(function(){var b=document.getElementById("mobileBook");if(!b)return;function t(){b.classList.toggle("show",window.scrollY>window.innerHeight*0.6)}window.addEventListener("scroll",t,{passive:true});t()})();</script>
 </body>
 </html>
