@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Skin Fades &amp; Low Taper Fades in Cherry Hill, NJ | Babylon Barbers</title>
-<meta name="description" content="Low taper fades and low, mid and high skin fades at Babylon Barbers in Cherry Hill, NJ. Blended clean and finished with a wash and style. $55. Book online today.">
+<title>Skin Fades, Low Taper &amp; Burst Fades in Cherry Hill, NJ | Babylon Barbers</title>
+<meta name="description" content="Low taper fades, burst fades and low, mid and high skin fades at Babylon Barbers in Cherry Hill, NJ. Blended clean and finished with a wash and style. $55. Book online today.">
 <link rel="canonical" href="https://babylonbarbers.com/skin-fades.html">
 <meta property="og:title" content="Skin Fades in Cherry Hill, NJ | Babylon Barbers">
 <meta property="og:image" content="https://babylonbarbers.com/images/og-share.jpg">
@@ -21,6 +21,7 @@
  {"@type":"FAQPage","mainEntity":[
   {"@type":"Question","name":"What's the difference between a low, mid and high skin fade?","acceptedAnswer":{"@type":"Answer","text":"It's where the fade starts. A low skin fade starts just above the ear and stays subtle, a mid skin fade starts around the temple, and a high skin fade starts near the top of the head for the sharpest contrast."}},
   {"@type":"Question","name":"What's the difference between a low taper fade and a low skin fade?","acceptedAnswer":{"@type":"Answer","text":"A low taper fade only shortens the hair at the sideburns and neckline and keeps some length there. A low skin fade starts in the same spot but blends all the way down to bare skin, so it looks sharper."}},
+  {"@type":"Question","name":"What is a burst fade?","acceptedAnswer":{"@type":"Answer","text":"A burst fade curves in a half-circle around the ear instead of going straight around the head. The back of the neck keeps its length, which is why it pairs well with mohawks, mullets and curly tops."}},
   {"@type":"Question","name":"How much is a skin fade at Babylon Barbers?","acceptedAnswer":{"@type":"Answer","text":"A skin fade or taper fade is $55 and includes a wash, blow-dry and style. Kids fades are $35 to $45."}},
   {"@type":"Question","name":"How often should I get my skin fade touched up?","acceptedAnswer":{"@type":"Answer","text":"Most clients come back every 2 to 3 weeks to keep the fade crisp."}},
   {"@type":"Question","name":"Do you do skin fades for kids?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our barbers do kids skin fades every day and are patient with clients of all ages."}}]}
@@ -71,10 +72,11 @@ section.block{padding:96px 0}
 .head h2{font-size:clamp(32px,4.5vw,52px);line-height:1.08;margin:14px 0 16px}
 .head p{color:var(--text-dim)}
 /* fade cards */
-.fades{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fades{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.fades>.fade{flex:0 1 calc((100% - 44px)/3)}
 .fade{background:var(--surface);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:transform .4s var(--ease),border-color .4s}
 .fade:hover{transform:translateY(-6px);border-color:rgba(212,168,75,.5)}
-.fade-img{height:280px;overflow:hidden;position:relative}
+.fade-img{height:300px;overflow:hidden;position:relative}
 .fade-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
 .fade-badge{position:absolute;top:14px;left:14px;background:rgba(13,14,36,.85);border:1px solid var(--border);padding:6px 12px;border-radius:30px}
 .fade-body{padding:26px}
@@ -124,7 +126,8 @@ footer p+p{margin-top:8px}
 .mobile-book{display:none}
 /* mockup banner */
 .mock{position:fixed;top:calc(84px + env(safe-area-inset-top,0px));right:14px;z-index:60;background:#b3261e;color:#fff;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:2px;padding:7px 12px;border-radius:8px;text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.4)}
-@media(max-width:1100px){.fades{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:1100px){.fades>.fade{flex-basis:calc((100% - 22px)/2)}}
+@media(max-width:900px){.fades>.fade{flex-basis:100%}}
 @media(max-width:900px){.fades,.why{grid-template-columns:1fr}.visit{grid-template-columns:1fr;padding:34px 24px}}
 @media(max-width:768px){
  .nav-links a:not(.btn){display:none}
@@ -155,7 +158,7 @@ footer p+p{margin-top:8px}
   <div class="wrap">
     <p class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Skin Fades</p>
     <h1 class="serif" style="margin-top:34px"><span class="mono" style="display:block;margin-bottom:18px;letter-spacing:5px">Cherry Hill Barbershop</span>Skin Fades in <em>Cherry Hill, NJ</em></h1>
-    <p class="lead">Low taper fades and low, mid and high skin fades, blended clean with no lines and no shadows. Every fade is finished with a wash, blow-dry and style.</p>
+    <p class="lead">Low taper fades, burst fades and low, mid and high skin fades, blended clean with no lines and no shadows. Every fade is finished with a wash, blow-dry and style.</p>
     <div class="hero-ctas">
       <a href="https://babylonbookings.com/app" class="btn btn-gold" target="_blank" rel="noopener">Book Your Fade &rarr;</a>
       <a href="tel:8562952244" class="btn btn-ghost">Call (856) 295-2244</a>
@@ -181,11 +184,15 @@ footer p+p{margin-top:8px}
         <div class="fade-body"><h3>Low Taper Fade</h3><p>Tapered only at the sideburns and neckline, leaving the rest of the sides full. Clean edges with a natural, grown-in look.</p><p class="good"><b>Good for:</b> textured and messy tops, curls, a low-maintenance clean-up</p></div>
       </article>
       <article class="fade">
+        <div class="fade-img"><img src="images/gallery-taper-design.jpg" alt="Burst fade at Babylon Barbers, Cherry Hill NJ" loading="lazy"><span class="fade-badge mono" style="font-size:10px">Curved</span></div>
+        <div class="fade-body"><h3>Burst Fade</h3><p>Fades in a half-circle around the ear and leaves length at the back of the neck, so the shape &ldquo;bursts&rdquo; out from behind the ear.</p><p class="good"><b>Good for:</b> mohawks, mullets, curly and textured tops</p></div>
+      </article>
+      <article class="fade">
         <div class="fade-img"><img src="images/fade-low-skin.jpg" alt="Low skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 45%"><span class="fade-badge mono" style="font-size:10px">Subtle</span></div>
         <div class="fade-body"><h3>Low Skin Fade</h3><p>Starts just above the ear and around the neckline. Keeps more weight on the sides, so it stays clean but low-key.</p><p class="good"><b>Good for:</b> work, longer styles on top, first-time fades</p></div>
       </article>
       <article class="fade">
-        <div class="fade-img"><img src="images/gallery-taper-design.jpg" alt="Mid skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy"><span class="fade-badge mono" style="font-size:10px">Balanced</span></div>
+        <div class="fade-img"><img src="images/fade-mid-skin.jpg" alt="Mid skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 35%"><span class="fade-badge mono" style="font-size:10px">Balanced</span></div>
         <div class="fade-body"><h3>Mid Skin Fade</h3><p>Starts around the temple. The balance between subtle and bold, and it works with almost any cut on top.</p><p class="good"><b>Good for:</b> textured crops, French crops, everyday wear</p></div>
       </article>
       <article class="fade">
@@ -203,7 +210,7 @@ footer p+p{margin-top:8px}
       <h2 class="serif">Simple, Upfront Prices.</h2>
     </div>
     <div class="prices">
-      <div class="price-row feature"><div><h4>Skin Fade or Taper Fade</h4><p>Low taper, low, mid or high skin. Includes wash, blow-dry &amp; style</p></div><div class="amt">$55</div></div>
+      <div class="price-row feature"><div><h4>Skin Fade or Taper Fade</h4><p>Low taper, burst, or low, mid &amp; high skin. Includes wash, blow-dry &amp; style</p></div><div class="amt">$55</div></div>
       <div class="price-row"><div><h4>Kids Fade</h4><p>Patient barbers, same clean finish</p></div><div class="amt">$35 &ndash; $45</div></div>
       <div class="price-row"><div><h4>Add a Beard Clean Up</h4><p>Hot towel and razor outline</p></div><div class="amt">$20 &ndash; $30</div></div>
     </div>
@@ -228,6 +235,7 @@ footer p+p{margin-top:8px}
     <div class="faq">
       <details open><summary>What's the difference between a low, mid and high skin fade?</summary><p>It's where the fade starts. A low skin fade starts just above the ear and stays subtle, a mid skin fade starts around the temple, and a high skin fade starts near the top of the head for the sharpest contrast.</p></details>
       <details><summary>What's the difference between a low taper fade and a low skin fade?</summary><p>A low taper fade only shortens the hair at the sideburns and neckline and keeps some length there. A low skin fade starts in the same spot but blends all the way down to bare skin, so it looks sharper.</p></details>
+      <details><summary>What is a burst fade?</summary><p>A burst fade curves in a half-circle around the ear instead of going straight around the head. The back of the neck keeps its length, which is why it pairs well with mohawks, mullets and curly tops.</p></details>
       <details><summary>How much is a skin fade?</summary><p>A skin fade or taper fade is $55 and includes a wash, blow-dry and style. Kids fades are $35 to $45.</p></details>
       <details><summary>How often should I get it touched up?</summary><p>Most clients come back every 2 to 3 weeks to keep the fade crisp.</p></details>
       <details><summary>Do you do skin fades for kids?</summary><p>Yes. Our barbers do kids skin fades every day and are patient with clients of all ages.</p></details>
