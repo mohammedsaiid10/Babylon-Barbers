@@ -78,6 +78,10 @@ section.block{padding:96px 0}
 .fade:hover{transform:translateY(-6px);border-color:rgba(212,168,75,.5)}
 .fade-img{aspect-ratio:4/5;overflow:hidden;position:relative}
 .fade-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.fade-link{display:block;color:inherit;text-decoration:none}
+.fade-img img{transition:transform .6s var(--ease)}
+.fade-link:hover .fade-img img{transform:scale(1.04)}
+.fade-cta{position:absolute;left:14px;bottom:14px;padding:9px 14px;border-radius:30px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#0d0e24;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.35)}
 .fade-badge{position:absolute;top:14px;left:14px;background:rgba(13,14,36,.85);border:1px solid var(--border);padding:6px 12px;border-radius:30px}
 .fade-body{padding:26px}
 .fade-body h3{font-family:'Playfair Display',serif;font-weight:400;font-size:26px;margin-bottom:10px}
@@ -175,23 +179,23 @@ footer p+p{margin-top:8px}
     </div>
     <div class="fades">
       <article class="fade">
-        <div class="fade-img"><img src="images/gallery-textured-taper.jpg" alt="Low taper fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 40%"><span class="fade-badge mono" style="font-size:10px">Most popular</span></div>
+        <a class="fade-link" href="https://babylonbookings.com/app" target="_blank" rel="noopener" aria-label="Book a Low Taper Fade"><div class="fade-img"><img src="images/gallery-textured-taper.jpg" alt="Low taper fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 40%"><span class="fade-badge mono" style="font-size:10px">Most popular</span><span class="fade-cta">Book this cut &rarr;</span></div></a>
         <div class="fade-body"><h3>Low Taper Fade</h3><p>Tapered only at the sideburns and neckline, leaving the rest of the sides full. Clean edges with a natural, grown-in look.</p><p class="good"><b>Good for:</b> textured and messy tops, curls, a low-maintenance clean-up</p></div>
       </article>
       <article class="fade">
-        <div class="fade-img"><img src="images/gallery-taper-design.jpg" alt="Burst fade at Babylon Barbers, Cherry Hill NJ" loading="lazy"><span class="fade-badge mono" style="font-size:10px">Curved</span></div>
+        <a class="fade-link" href="https://babylonbookings.com/app" target="_blank" rel="noopener" aria-label="Book a Burst Fade"><div class="fade-img"><img src="images/gallery-taper-design.jpg" alt="Burst fade at Babylon Barbers, Cherry Hill NJ" loading="lazy"><span class="fade-badge mono" style="font-size:10px">Curved</span><span class="fade-cta">Book this cut &rarr;</span></div></a>
         <div class="fade-body"><h3>Burst Fade</h3><p>Fades in a half-circle around the ear and leaves length at the back of the neck, so the shape &ldquo;bursts&rdquo; out from behind the ear.</p><p class="good"><b>Good for:</b> mohawks, mullets, curly and textured tops</p></div>
       </article>
       <article class="fade">
-        <div class="fade-img"><img src="images/fade-low-skin.jpg" alt="Low skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 45%"><span class="fade-badge mono" style="font-size:10px">Subtle</span></div>
+        <a class="fade-link" href="https://babylonbookings.com/app" target="_blank" rel="noopener" aria-label="Book a Low Skin Fade"><div class="fade-img"><img src="images/fade-low-skin.jpg" alt="Low skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 45%"><span class="fade-badge mono" style="font-size:10px">Subtle</span><span class="fade-cta">Book this cut &rarr;</span></div></a>
         <div class="fade-body"><h3>Low Skin Fade</h3><p>Starts just above the ear and around the neckline. Keeps more weight on the sides, so it stays clean but low-key.</p><p class="good"><b>Good for:</b> work, longer styles on top, first-time fades</p></div>
       </article>
       <article class="fade">
-        <div class="fade-img"><img src="images/fade-mid-skin.jpg" alt="Mid skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 35%"><span class="fade-badge mono" style="font-size:10px">Balanced</span></div>
+        <a class="fade-link" href="https://babylonbookings.com/app" target="_blank" rel="noopener" aria-label="Book a Mid Skin Fade"><div class="fade-img"><img src="images/fade-mid-skin.jpg" alt="Mid skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 35%"><span class="fade-badge mono" style="font-size:10px">Balanced</span><span class="fade-cta">Book this cut &rarr;</span></div></a>
         <div class="fade-body"><h3>Mid Skin Fade</h3><p>Starts around the temple. The balance between subtle and bold, and it works with almost any cut on top.</p><p class="good"><b>Good for:</b> textured crops, French crops, everyday wear</p></div>
       </article>
       <article class="fade">
-        <div class="fade-img"><img src="images/fade-high-skin.jpg" alt="High skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 45%"><span class="fade-badge mono" style="font-size:10px">Bold</span></div>
+        <a class="fade-link" href="https://babylonbookings.com/app" target="_blank" rel="noopener" aria-label="Book a High Skin Fade"><div class="fade-img"><img src="images/fade-high-skin.jpg" alt="High skin fade at Babylon Barbers, Cherry Hill NJ" loading="lazy" style="object-position:center 45%"><span class="fade-badge mono" style="font-size:10px">Bold</span><span class="fade-cta">Book this cut &rarr;</span></div></a>
         <div class="fade-body"><h3>High Skin Fade</h3><p>Starts near the top of the head for maximum contrast. Sharp, clean and made to stand out.</p><p class="good"><b>Good for:</b> slick backs, short tops, a fresh statement</p></div>
       </article>
     </div>
