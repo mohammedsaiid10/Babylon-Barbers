@@ -841,13 +841,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click'
 
   setTimeout(()=>{
     splash.classList.add('done');
-    window.scrollTo(0,0);
+    // If the link points to a section (e.g. #team), jump there; otherwise go to top
+    const target=location.hash&&document.querySelector(location.hash);
+    if(target){target.scrollIntoView({block:'start'});}else{window.scrollTo(0,0);}
     // Force play after splash goes
     document.querySelectorAll('video').forEach(function(v){
       if(!v.wantsSound){v.muted=true;}v.play().catch(function(){});
     });
     setTimeout(()=>splash.remove(),1000);
-  },3800);
+  },location.hash?300:3800);
 })();
 
 // VIDEO AUTOPLAY
